@@ -4,6 +4,8 @@
 # docker run
 make run
 
+# ====== in the docker container ======
+
 # build bpf program
 cd src && make hello.bpf.o
 
