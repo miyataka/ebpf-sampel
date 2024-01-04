@@ -10,5 +10,5 @@ WORKDIR /home/ubuntu
 RUN cd libbpf/src && make clean && make && make install
 
 # build bpftool
-RUN apt install -y binutils-dev llvm-dev gcc libcap-dev
+RUN apt install -y binutils-dev llvm-dev gcc libcap-dev libbpf-dev
 RUN cd bpftool/src && make install
